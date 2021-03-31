@@ -24,7 +24,7 @@ echo "Installing font"
 
 for file in ${font_list[*]}; do
   sudo chown root:root "${file}"
-  sudo cp "${file}" /usr/share/fonts/truetype/menlo
+  sudo cp "${file}" $font_dir
 done
 
 # Clear and regenerate your font cache and indexes.
