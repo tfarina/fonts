@@ -15,7 +15,7 @@ unzip -o hack-font.zip
 
 for file in Hack-Bold.ttf Hack-BoldItalic.ttf Hack-Italic.ttf Hack-Regular.ttf; do
   sudo chown root:root "${file}"
-  sudo mv "${file}" $font_dir
+  sudo cp "${file}" $font_dir
 done
 
 # Clear and regenerate your font cache and indexes with the following command:
