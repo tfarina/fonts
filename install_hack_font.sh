@@ -2,7 +2,12 @@
 
 font_dir=/usr/share/fonts/truetype/hack
 
-sudo mkdir -p $font_dir
+if [ -d $font_dir ]; then
+  echo "Found directory: " $font_dir
+else
+  echo "Creating directory: " $font_dir
+  sudo mkdir -p $font_dir
+fi
 
 cd /tmp
 wget -O hack-font.zip https://github.com/chrissimpkins/Hack/releases/download/v2.020/Hack-v2_020-ttf.zip
