@@ -9,9 +9,9 @@ else
   sudo mkdir -p $font_dir
 fi
 
-cd /tmp
-wget -O hack-font.zip https://github.com/chrissimpkins/Hack/releases/download/v2.020/Hack-v2_020-ttf.zip
-unzip -o hack-font.zip
+cd truetype/hack
+
+echo "Installing font"
 
 for file in Hack-Bold.ttf Hack-BoldItalic.ttf Hack-Italic.ttf Hack-Regular.ttf; do
   sudo chown root:root "${file}"
