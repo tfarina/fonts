@@ -18,8 +18,11 @@ for file in Hack-Bold.ttf Hack-BoldItalic.ttf Hack-Italic.ttf Hack-Regular.ttf; 
   sudo cp "${file}" $font_dir
 done
 
-# Clear and regenerate your font cache and indexes with the following command:
-# fc-cache -f -v
-#
+# Clear and regenerate your font cache and indexes.
+
+echo "Updating font cache... Please, wait."
+fc-cache -f -v
+echo "Finished. You font cache has been updated."
+
 # You can confirm that the fonts are installed with the following command:
 # fc-list | grep Hack
