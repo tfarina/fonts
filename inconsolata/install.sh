@@ -1,15 +1,12 @@
 #!/bin/bash
 
-font_list=("Consolas-Bold.ttf" \
-           "Consolas-BoldItalic.ttf" \
-	   "Consolas-Italic.ttf" \
-           "Consolas-Regular.ttf")
+font_list=("Inconsolata-Regular.ttf")
 
 for file in ${font_list[*]}; do
   echo $file
 done
 
-font_dir=/usr/share/fonts/truetype/consolas
+font_dir=/usr/share/fonts/truetype/inconsolata
 
 if [ -d $font_dir ]; then
   echo "Found directory: " $font_dir
@@ -18,9 +15,7 @@ else
   sudo mkdir -p $font_dir
 fi
 
-cd truetype/consolas
-
-echo "Installing font"
+echo "Installing font..."
 
 for file in ${font_list[*]}; do
   sudo chown root:root "${file}"
@@ -31,7 +26,7 @@ done
 
 echo "Updating font cache... Please, wait."
 fc-cache -f -v
-echo "Finished. You font cache has been updated."
+echo "Finished. Your font cache has been updated.\n"
 
-# You can confirm that the fonts are installed with the following command:
-# fc-list | grep Consolas
+echo "You can confirm that the fonts are installed with the following command:"
+echo "fc-list | grep Inconsolata"

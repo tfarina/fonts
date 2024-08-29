@@ -18,9 +18,7 @@ else
   sudo mkdir -p $font_dir
 fi
 
-cd truetype/menlo
-
-echo "Installing font"
+echo "Installing font..."
 
 for file in ${font_list[*]}; do
   sudo chown root:root "${file}"

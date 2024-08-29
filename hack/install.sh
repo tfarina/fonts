@@ -9,9 +9,7 @@ else
   sudo mkdir -p $font_dir
 fi
 
-cd truetype/hack
-
-echo "Installing font"
+echo "Installing font..."
 
 for file in Hack-Bold.ttf Hack-BoldItalic.ttf Hack-Italic.ttf Hack-Regular.ttf; do
   sudo chown root:root "${file}"
