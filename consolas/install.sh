@@ -29,7 +29,7 @@ done
 
 echo "Updating font cache... Please, wait."
 fc-cache -f -v
-echo "Finished. You font cache has been updated."
+echo "Finished. Your font cache has been updated."
 
 # You can confirm that the fonts are installed with the following command:
 # fc-list | grep Consolas
