@@ -89,3 +89,40 @@ hinting to your fonts.
 
 Specifies the subpixel color order to your fonts. Use this option for LCD or
 flat-screen displays.
+
+# From gconf-editor
+
+## Antialiasing
+
+The type of antialiasing to use when rendering fonts. Possible values are:
+"none" for no antialiasing, "grayscale" for standard grayscale antialiasing,
+and "rgba" for subpixel antialiasing (LCD screens only).
+
+Key name: /desktop/gnome/font_rendering/antialiasing
+Value: rgba
+
+## DPI
+
+The resolution used for converting font sizes to pixel sizes, in dots per
+inch.
+
+Key name: /desktop/gnome/font_rendering/dpi
+Value: 96
+
+## Hinting
+
+The type of hinting to use when rendering fonts. Possible values are: "none"
+for no hinting, "slight" for basic, "medium" for moderate, and "full" for
+maximum hinting (may cause distortion of letter forms).
+
+Key name: /desktop/gnome/font_rendering/hinting
+Value: slight
+
+## RGBA_ORDER
+
+The order of subpixel elements on an LCD screen; only used when antialiasing
+is set to "rgba". Possible values are: "rgb" for red on left (most common),
+"bgr" for blue on left, "vrgb" for red on top, "vbgr" for red on bottom.
+
+Key name: /desktop/gnome/font_rendering/rgba_order
+Value: rgb
