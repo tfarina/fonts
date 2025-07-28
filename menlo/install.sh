@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 font_list=("Menlo-Bold.ttf" \
            "Menlo-BoldItalic.ttf" \
 	   "Menlo-Italic.ttf" \

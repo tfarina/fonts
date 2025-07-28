@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 font_list=("DejaVuSans-BoldOblique.ttf" \
            "DejaVuSans-Bold.ttf" \
            "DejaVuSansCondensed-BoldOblique.ttf" \

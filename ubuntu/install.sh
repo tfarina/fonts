@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 font_list=("UbuntuMono-B.ttf" \
            "UbuntuMono-BI.ttf" \
 	   "UbuntuMono-R.ttf" \

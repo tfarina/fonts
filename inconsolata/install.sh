@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 font_list=("Inconsolata-Regular.ttf")
 
 for file in ${font_list[*]}; do

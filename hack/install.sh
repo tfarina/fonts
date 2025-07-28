@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -euo pipefail
+
 font_dir=/usr/share/fonts/truetype/hack
 
 if [ -d $font_dir ]; then

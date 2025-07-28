@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 font_list=("Consolas-Bold.ttf" \
            "Consolas-BoldItalic.ttf" \
 	   "Consolas-Italic.ttf" \
