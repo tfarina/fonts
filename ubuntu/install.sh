@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 font_list=("UbuntuMono-B.ttf" \
            "UbuntuMono-BI.ttf" \

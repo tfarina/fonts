@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 font_list=("DejaVuSans-BoldOblique.ttf" \
            "DejaVuSans-Bold.ttf" \

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 font_list=("Inconsolata-Regular.ttf")
 
