@@ -8,7 +8,7 @@ font_list=("Consolas-Bold.ttf" \
            "Consolas-Regular.ttf")
 
 for file in "${font_list[*]}"; do
-  echo "$file"
+  echo "Processing: $file"
 done
 
 font_dir=/usr/share/fonts/truetype/consolas
