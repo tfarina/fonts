@@ -7,7 +7,7 @@ font_list=("UbuntuMono-B.ttf" \
 	   "UbuntuMono-R.ttf" \
            "UbuntuMono-RI.ttf")
 
-for file in "${font_list[*]}"; do
+for file in "${font_list[@]}"; do
   echo "Processing: $file"
 done
 
@@ -22,7 +22,7 @@ fi
 
 echo "Installing font..."
 
-for file in "${font_list[*]}"; do
+for file in "${font_list[@]}"; do
   # TODO: do not copy the file if it already exists.
   sudo cp "${file}" "$font_dir"
 done

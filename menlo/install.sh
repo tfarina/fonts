@@ -7,7 +7,7 @@ font_list=("Menlo-Bold.ttf" \
 	   "Menlo-Italic.ttf" \
            "Menlo-Regular.ttf")
 
-for file in "${font_list[*]}"; do
+for file in "${font_list[@]}"; do
   echo "Processing: $file"
 done
 
@@ -22,7 +22,7 @@ fi
 
 echo "Installing font..."
 
-for file in "${font_list[*]}"; do
+for file in "${font_list[@]}"; do
   sudo chown root:root "${file}"
   sudo cp "${file}" "$font_dir"
 done
