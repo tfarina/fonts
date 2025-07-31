@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+#
+# Usage:
+#   ./install.sh [fontname ...] > install.log 2>&1
+#   Run with specific font directories or leave empty to install all.
+#
 set -euo pipefail
 
 # Detect current directory
