@@ -39,3 +39,17 @@ To add a new font:
 2. Add the .ttf files.
 3. Write an install.sh script based on the existing ones.
 4. Commit and push your changes.
+
+## Selecting the Default Font on XFCE 4.12
+
+After installing a font, you can set it as the default in XFCE:
+
+1. Open **Settings Manager** → **Appearance** → **Fonts**.
+2. Choose your preferred font from the dropdown list.
+3. Adjust size and antialiasing options if needed.
+
+For window title fonts:
+1. Open **Settings Manager** → **Window Manager** → **Style** tab.
+2. Select your font under the **Title font** section.
+
+The change takes effect immediately across XFCE.
