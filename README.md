@@ -8,7 +8,6 @@ them backed up.
 
 The fonts are organized into directories by name:
 
-- `consolas/`
 - `dejavu/`
 - `fixedsys/`
 - `hack/`
